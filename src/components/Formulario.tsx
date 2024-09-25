@@ -1,17 +1,17 @@
-'use client'
+"use client";
+import useFormularioUsuario from "@/hooks/useFormularioUsuario";
 import { useState } from "react";
 
-
 export default function Formulario() {
-  const [nome, alterarNome] = useState('')
-  const [email, alterarEmail] = useState('')
-  const [senha, alterarSenha] = useState('')
-
-  function salvar() {
-    console.log('Nome:', nome)
-    console.log('Email:', email)
-    console.log('Senha:', senha)
-  }
+  const {
+    nome,
+    email,
+    senha,
+    alterarNome,
+    alterarEmail,
+    alterarSenha,
+    salvar,
+  } = useFormularioUsuario();
 
   return (
     <div className="flex flex-col gap-3">
@@ -40,7 +40,7 @@ export default function Formulario() {
         className="bg-zinc-800 p-2 rounded-md outline-none"
       />
 
-      <button onClick={salvar} className="bg-blue-400 rounded-sm p-1">
+      <button onClick={salvar} className="bg-blue-400 rounded-md p-1">
         Salvar
       </button>
 
@@ -50,6 +50,5 @@ export default function Formulario() {
         <span>{senha}</span>
       </div>
     </div>
-    
   );
 }
