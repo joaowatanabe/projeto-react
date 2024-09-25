@@ -7,7 +7,7 @@ export default function Cabecalho() {
         <IconBrandReact size={35} stroke={1} className="text-blue-400"/>
         <span className="font-black">React Essencial</span>
       </div>
-      <div className="bg-emerald-600 w-10 h-10 rounded-full flex justify-center items-center">
+      <div className="bg-blue-400 w-10 h-10 rounded-full flex justify-center items-center">
         US
       </div>
     </header>
