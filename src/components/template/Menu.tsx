@@ -7,6 +7,7 @@ export default function Menu() {
         <Link className="bg-emerald-900 p-2 rounded-md" href='/'>Início</Link>
         <Link className="bg-emerald-900 p-2 rounded-md" href='/primeiro'>Primeiro Componente</Link>
         <Link className="bg-emerald-900 p-2 rounded-md" href='/contador'>Componente com Estado</Link>
+        <Link className="bg-emerald-900 p-2 rounded-md" href='/formulario'>Exemplo de formulário</Link>
       </nav>
     </aside>
   )
