@@ -2,11 +2,13 @@
 
 import { useState } from "react"
 
-export default function Contador() {
-  const estado = useState(0)
-  const numero = estado[0]
-  const alterarNumero = estado[1]
+interface ContadorProps {
+  valorInicial?: number
+}
 
+export default function Contador(props: ContadorProps) {
+  const [numero, alterarNumero] = useState(props.valorInicial ?? 0)
+  
   function decrementar() {
     alterarNumero(numero - 1)
    
